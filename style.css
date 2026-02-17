@@ -4,3 +4,70 @@ body {
     margin:0;
     color: #333;
 }
+
+nav {
+    background-color: #8b0000;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 5%;
+}
+
+.logo{
+    color: white;
+    font-weight:bold;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    transition: 0.3s;
+    position: relative;
+    padding-bottom: 5px;
+}
+
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color:  #ffcc00;
+    transition: width 0.3s ease;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.recipe-container{
+    max-width: 800px;
+    margin: 40 px auto;
+    background: white;
+    padding: 40 px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border-radius: 8px;
+}
+
+.recipe-img{
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #8b0000; border-bottom: 2px solid #eee; padding-bottom: 10px;
+}
+
+h2 {
+    margin-top: 30px; font-size: 1.5rem; color:#444;
+}
+
+ul, ol {
+    padding-left: 20px;
+    line-height: 1.8;
+}
