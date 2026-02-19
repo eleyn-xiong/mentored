@@ -1,15 +1,4 @@
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f1ea;
-    margin:0;
-    color: #2c2c2c;
-    background-image: url('https://www.transparenttextures.com/patterns/p6.png'), 
-                      linear-gradient(to bottom, #f4f1ea, #e8e4d8);
-
-    line-height: 1.6;
-}
-
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:ital,wght@0,700;1,700&display=swap');
 
 * {
     margin: 0;
@@ -17,241 +6,194 @@ body {
     box-sizing: border-box;
 }
 
-.main-nav {
-    padding: 20px;
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    color: #333;
+    line-height: 1.8;
 }
 
-.main-nav ul {
-    display:flex;
+nav {
+    background-color: rgba(174, 14, 14, 0.9);
+    display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 1.5rem 8%;
+    border-bottom: 1px solid #eee;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-image: url("https://dynastydumplingsf.com/banner.webp");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.logo {
+    color: #d32f2f;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    font-size: 1.8rem;
+    letter-spacing: -1px;
+}
+
+nav ul {
+    display: flex;
     list-style: none;
 }
 
-.main-nav a{
+nav ul li a {
+    color: #555;
     text-decoration: none;
-    color: white;
-    margin: 0 15px;
-    font-size: 0.8rem;
-    letter-spacing: 2px;
+    margin-left: 30px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s;
 }
 
-.hero{
-    height: 90vh; /* Takes up 80% of the screen height */
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1563245332-6902092cc772?auto=format&fit=crop&w=1500'); 
+nav ul li a:hover {
+    color: #d32f2f;
+}
+
+.hero {
+    height: 80vh;
+    background: linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)), 
+                url('https://images.unsplash.com/photo-1541696432-82c6da8ce7bf?auto=format&fit=crop&w=1600'); 
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 4.5rem;
+    color: #1a1a1a;
+    font-style: italic;
+    border: none; 
+}
+
+.hero p {
+    color: #444;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 15px 40px;
+    border-radius: 0; 
+    text-decoration: none;
+    font-weight: 700;
+    margin: 20px 10px;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.4s;
+}
+
+.btn-order {
+    background-color: #d32f2f;
+    color: white;
+    border: 1px solid #d32f2f;
+}
+
+.btn-order:hover {
+    background-color: transparent;
+    color: #d32f2f;
 }
 
 
 .about-section {
     display: flex;
     align-items: center;
-    padding: 80px 10%;
-    background-color: #1a1a1a;
-    color: #f4f4f4;
-}
-
-.about-image, .about-content {
-    flex: 1;
-    padding: 20px;
+    padding: 100px 12%;
+    background-color: #fdfaf5;
+    color: #333;
 }
 
 .about-image img {
     width: 100%;
-    border-radius: 4px;
-    box-shadow: 10px 10px 0px #8b0000; /* Red decorative accent */
+    border-radius: 0;
+    box-shadow: 20px 20px 0px #f2e6d5;
+}
+
+.about-content h3 {
+    color: #d32f2f;
+    letter-spacing: 4px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.about-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.recipe-container {
+    max-width: 900px;
+    margin: 60px auto;
+    background: #fff;
+    padding: 60px;
+    border-radius: 0;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.dish-card {
+    background: #fff;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    border: 1px solid #eee;
+    width: 350px;
+    transition: transform 0.3s;
+}
+
+.dish-card:hover {
+    transform: translateY(-5px);
+}
+
+.dish-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: #1a1a1a;
+    padding: 15px 15px 5px;
+}
+
+.dish-card p {
+    padding: 0 15px 15px;
+    font-size: 0.9rem;
+    color: #777;
 }
 
 
 footer {
-    background-color: #121212;
-    color: #999;
-    padding: 60px 10%;
-    border-top: 1px solid #333;
-}
-
-.footer-grid {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    background-color: #1a1a1a;
+    color: #bbb;
+    padding: 80px 10%;
+    font-size: 0.85rem;
 }
 
 .footer-col h4 {
-    color: white;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-.footer-col ul {
-    list-style: none;
-    padding: 0;
-}
-
-.footer-col ul li {
-    margin-bottom: 10px;
-}
-
-/* 4. Navigation Button */
-.btn-reserve-nav {
-    background: white;
-    color: black;
-    padding: 8px 20px;
-    text-decoration: none;
-    border-radius: 4px;
-    font-weight: bold;
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    text-transform: capitalize;
+    font-size: 1.2rem;
 }
 
 h1 {
-    font-size: 5rem;
-    font-style: italic;
-    line-height: 1.1;
-    margin-bottom: 20px;
-}
-
-.brand-subtitle {
-    letter-spacing: 5px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #4a6d6a; /* Darker teal for subtle contrast */
-}
-
-/* 4. Buttons - Making them look like the screenshot */
-.btn {
-    display: inline-block;
-    padding: 12px 35px;
-    border-radius: 50px;
-    text-decoration: none;
-    font-weight: bold;
-    margin: 10px;
-    font-size: 0.9rem;
-}
-
-.btn-reserve {
-    background-color: #e3000f; /* Vibrant Red */
-    color: white;
-}
-
-.btn-order {
-    border: 2px solid white;
-    color: white;
-}
-
-nav {
-    background-color: #8b0000;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 5%;
-}
-
-.logo{
-    color: white;
-    font-weight:bold;
-    font-size: 1.5rem;
-    letter-spacing: 1px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    transition: 0.3s;
-    position: relative;
-    padding-bottom: 5px;
-}
-
-nav ul li a::after{
-    content: '';
-    position: absolute;
-    width: 0;
-    height: 2px;
-    bottom: 0;
-    left: 0;
-    background-color:  #ffcc00;
-    transition: width 0.3s ease;
-}
-nav ul li a:hover::after{
-    width: 100%;
-}
-
-.recipe-container{
-    max-width: 800px;
-    margin: 40 px auto;
-    background: white;
-    padding: 40 px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    border-radius: 8px;
-}
-
-.recipe-img{
-    width: 100%;
-    height: auto;
-    border-radius: 4px;
-    margin-bottom: 20px;
-}
-
-h1 {
-    color: #8b0000; border-bottom: 2px solid #eee; padding-bottom: 10px;
+    color: #1a1a1a;
+    font-family: 'Playfair Display', serif;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
 }
 
 h2 {
-    margin-top: 30px; font-size: 1.5rem; color:#444;
-}
-
-ul, ol {
-    padding-left: 20px;
-    line-height: 1.8;
-}
-
-/* Featured Grid Styling */
-.featured {
-    padding: 50px 10%;
-    text-align: center;
-}
-
-.featured-grid {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 30px;
-}
-
-.dish-card {
-    background: white;
-    padding: 15px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    width: 300px;
-}
-
-.dish-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-.dish-card h3 {
-    margin: 15px 0 10px;
-    color: #8b0000;
-}
-
-.dish-card a {
-    display: inline-block;
-    margin-top: 10px;
-    color: #8b0000;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-/* Fix for nav in the recipe files */
-nav ul {
-    display: flex;
-    list-style: none;
+    font-family: 'Playfair Display', serif;
+    color: #d32f2f;
 }
