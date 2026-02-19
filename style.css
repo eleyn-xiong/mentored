@@ -1,9 +1,15 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #8bbab6;
+    background-color: #f4f1ea;
     margin:0;
-    color: #bc2122;
+    color: #2c2c2c;
+    background-image: url('https://www.transparenttextures.com/patterns/p6.png'), 
+                      linear-gradient(to bottom, #f4f1ea, #e8e4d8);
+
+    line-height: 1.6;
 }
+
+
 
 * {
     margin: 0;
@@ -29,12 +35,76 @@ body {
     letter-spacing: 2px;
 }
 
-.hero-section {
-    height: 80vh; /* Takes up 80% of the screen height */
+.hero{
+    height: 90vh; /* Takes up 80% of the screen height */
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1563245332-6902092cc772?auto=format&fit=crop&w=1500'); 
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
     text-align: center;
+}
+
+
+.about-section {
+    display: flex;
+    align-items: center;
+    padding: 80px 10%;
+    background-color: #1a1a1a;
+    color: #f4f4f4;
+}
+
+.about-image, .about-content {
+    flex: 1;
+    padding: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 10px 10px 0px #8b0000; /* Red decorative accent */
+}
+
+
+footer {
+    background-color: #121212;
+    color: #999;
+    padding: 60px 10%;
+    border-top: 1px solid #333;
+}
+
+.footer-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-col h4 {
+    color: white;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.footer-col ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-col ul li {
+    margin-bottom: 10px;
+}
+
+/* 4. Navigation Button */
+.btn-reserve-nav {
+    background: white;
+    color: black;
+    padding: 8px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
 }
 
 h1 {
@@ -137,4 +207,51 @@ h2 {
 ul, ol {
     padding-left: 20px;
     line-height: 1.8;
+}
+
+/* Featured Grid Styling */
+.featured {
+    padding: 50px 10%;
+    text-align: center;
+}
+
+.featured-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.dish-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    width: 300px;
+}
+
+.dish-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.dish-card h3 {
+    margin: 15px 0 10px;
+    color: #8b0000;
+}
+
+.dish-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: #8b0000;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/* Fix for nav in the recipe files */
+nav ul {
+    display: flex;
+    list-style: none;
 }
