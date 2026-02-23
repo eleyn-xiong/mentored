@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
-    background-color: #ffffff;
+    background-color: #fdfaf5;
     margin: 0;
     color: #333;
     line-height: 1.8;
@@ -84,6 +84,13 @@ nav ul li a:hover {
 }
 
 
+.map-container iframe {
+    width: 100%;
+    height: 450px; 
+    filter: grayscale(1);
+    border: 1px solid #eee;
+}
+
 .btn {
     display: inline-block;
     padding: 15px 40px;
@@ -136,23 +143,43 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+.recipe-img{
+    width: 350px !important;
+    height: 450px !important;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 0 !important;
+    margin-bottom: 30px;
+    display:block;
+    margin: 0 auto 30px auto;
+
+}
+
 .recipe-container {
-    max-width: 900px;
-    margin: 60px auto;
+    max-width: 700px;
+    margin: 40px auto;
     background: #fff;
-    padding: 60px;
-    border-radius: 0;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    text-align: center;
 }
 
 .dish-card {
     background: #fff;
     padding: 0;
+    padding-bottom: 20px;
     border-radius: 0;
     box-shadow: none;
     border: 1px solid #eee;
-    width: 350px;
+    width: 300px;
     transition: transform 0.3s;
+}
+
+.dish-card img {
+    width: 100%;
+    height: 200px; 
+    object-fit: cover;
 }
 
 .dish-card:hover {
