@@ -1,0 +1,68 @@
+
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.header{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+button, input {
+    padding: 8px 12px; 
+    margin: 0 5px; 
+    font-size: 16px;
+    cursor: pointer; 
+}
+
+#grid-container {
+    width: 500px;
+    height: 500px; 
+    background-color: white;
+    border: 4px solid #333;
+    border-radius: 4px;
+    display: grid;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    margin: 0 auto;
+}
+
+.cell {
+    background-color: white;
+    user-select: none;
+    /* no grid lines */
+    border: 1px solid #eee;
+}
+
+.cursor {
+    outline: 2px solid red;
+    z-index: 10;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: hsl(from color h s l);
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
